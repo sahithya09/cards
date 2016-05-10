@@ -1,0 +1,41 @@
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	<div class="flipper">
+		<div class="front">
+			 <div class="card hovercard">
+                <div class="cardheader">
+
+                </div>
+                <div class="avatar">
+                    <img alt="" ng-src="{{user.picture.thumbnail}}">
+                </div>
+                <div class="info">
+                    <div class="title">
+                        <a  href="#">{{user.name.first}}</a>
+                    </div>
+                    <div class="desc">{{user.phone}}</div>
+                    <div class="desc">{{user.nat}}</div>
+                    <div class="desc">{{changeDate(user.dob)}}</div>
+                </div>
+                <div class="bottom">
+                    <a class="btn btn-primary btn-twitter btn-sm" href="https://twitter.com/webmaniac">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" rel="publisher"
+                       href="https://plus.google.com/+ahmshahnuralam">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a class="btn btn-primary btn-sm" rel="publisher"
+                       href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-warning btn-sm" rel="publisher" href="https://plus.google.com/shahnuralam">
+                        <i class="fa fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+		</div>
+		<div class="back">
+			{{user.email}}
+		</div>
+	</div>
+</div>
